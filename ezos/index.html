@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZO Sushi Bar & Kitchen - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1:wght@500&family=Yuji+Boku&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<style>
+    body {
+      font-family: 'Yuji Boku', serif;
+    }
+  </style>
+</head>
+
+<body class="text-center min-h-screen bg-black text-white font-ezo-title">
+
+  <!-- Navbar -->
+ <nav class="bg-black py-4 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+      <div class="flex items-center justify-between">
+        <div class="logo">
+          <img src="logo.png">
+        </div>
+        <ul class="flex space-x-[9rem] text-xl tracking-wider">
+          <li><a href="index.html" class="text-yellow-400 font-bold">Home</a></li>
+          <li><a href="menu.html" class="text-white hover:text-yellow-400 transition duration-300">Menu</a></li>
+          <li><a href="#about" class="text-white hover:text-yellow-400 transition duration-300">About</a></li>
+          <li><a href="#contact" class="text-white hover:text-yellow-400 transition duration-300">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <h1 class="text-5xl md:text-6xl uppercase mb-8 tracking-widest">EZO Sushi Bar & Kitchen</h1>
+
+      <div class="max-w-4xl mx-auto mb-16 px-4">
+        <p class="text-xl leading-relaxed mb-6 text-gray-300">
+          Welcome to Ezo Sushi Bar Kitchen. Our mission is the <strong>authentic creation of region-specific Asian cuisine</strong>.
+        </p>
+        <p class="text-lg leading-relaxed text-gray-400">
+          Our inspiration is to spread the flavors of traditional Asian meals and bring them here with a modern flare — blending the cultural aspects of Japanese, Vietnamese, and Thai cuisine.
+        </p>
+      </div>
+
+      <h2 class="text-5xl font-ezo-script mb-12">Featured Dishes</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center food-gallery max-w-7xl mx-auto">
+        <div>
+          <img src="Rectangle 1.png" alt="Chef’s Choice Sushi Platter" class="rounded-xl mx-auto w-full h-auto object-cover aspect-video shadow-xl">
+          <h3 class="mt-4 text-xl text-gray-200">Chef’s Choice Sushi Platter</h3>
+          <p class="text-md text-gray-400">(Dinner Menu – Sushi and Sashimi)</p>
+        </div>
+
+        <div>
+          <img src="Rectangle 2.png" alt="Pho with Wagyu Beef" class="rounded-xl mx-auto w-full h-auto object-cover aspect-video shadow-xl">
+          <h3 class="mt-4 text-xl text-gray-200">Pho with Wagyu Beef</h3>
+          <p class="text-md text-gray-400">(Dinner Menu – Entrées)</p>
+        </div>
+
+        <div>
+          <img src="Rectangle 3.png" alt="Grilled Miso Black Cod" class="rounded-xl mx-auto w-full h-auto object-cover aspect-video shadow-xl">
+          <h3 class="mt-4 text-xl text-gray-200">Grilled Miso Black Cod</h3>
+          <p class="text-md text-gray-400">(Dinner Menu – Entrées)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 md:py-24 max-w-5xl mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl uppercase mb-10 tracking-widest">Our Story</h2>
+    <p class="text-lg md:text-xl leading-relaxed text-gray-300">
+      Ezo Kitchen & Sushi Bar is a new sushi and Asian fusion restaurant opening in the suburbs of Long Island co-owned by Michael Chen and Daniel Martinez. Together they share a passion for blending authenticity, creativity, and community.
+    </p>
+
+    <div class="h-px bg-white w-full my-12 md:my-16 opacity-20"></div>
+
+    <div class="flex flex-col sm:flex-row justify-center space-y-8 sm:space-y-0 sm:space-x-16">
+      <a href="menu.html" class="group block">
+        <span class="text-6xl transition duration-300 group-hover:text-yellow-400">Menu</span>
+        <div class="h-1 bg-white w-2/3 mx-auto mt-2 transition duration-300 group-hover:w-full"></div>
+      </a>
+      <a href="#" class="group block">
+        <span class="text-6xl transition duration-300 group-hover:text-yellow-400">Reservation</span>
+        <div class="h-1 bg-white w-2/3 mx-auto mt-2 transition duration-300 group-hover:w-full"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 md:py-24 max-w-3xl mx-auto px-4">
+    <h2 class="text-4xl uppercase mb-8 tracking-widest">Visit or Contact Us</h2>
+    <div class="text-left text-gray-300 space-y-4 text-lg">
+      <p><strong>Location:</strong> Hicksville, Long Island, NY</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> info@ezokitchen.com</p>
+      <p><strong>Hours:</strong><br>
+        Lunch: Mon - Fri: 11:30 AM - 2:30 PM<br>
+        Dinner: Mon - Sat: 5:00 PM - 10:00 PM<br>
+        Sunday: Closed
+      </p>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800 mt-10">
+    &copy; 2025 Ezo Sushi Bar & Kitchen. All rights reserved.
+  </footer>
+</body>
+</html>
