@@ -1,0 +1,78 @@
+/* Basic Reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  background-color: #DF6161;
+  font-family: 'Arial', serif; /* Optional */
+}
+h1 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 48px;
+  text-align: center;
+  color: yellow;
+}
+
+/* Navbar styles */
+
+
+.navbar {
+  background-color: #DF6161;
+  padding: 10px 0; /* Similar to py-2 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 9rem; /* space-x-[9rem] equivalent */
+  font-family: 'Yuji Boku', serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 1.25rem;
+
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #FFD700; /* Yellow for active link */
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+.logo img {
+  height: 100px; /* adjust as needed */
+}
