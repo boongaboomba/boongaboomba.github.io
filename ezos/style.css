@@ -1,0 +1,155 @@
+/* Basic Reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  margin: 0;
+  background-color: #DF6161;
+  font-family: 'Arial', san-serif; /* Optional */
+}
+h1 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 48px;
+  text-align: center;
+  color: yellow;
+}
+
+h3 {
+  font-family: 'Krona Onen', san-serif;
+  font-size: 48px;
+  color: white;
+}
+
+/* Navbar styles */
+
+
+.navbar {
+  background-color: #DF6161;
+  padding: 10px 0; /* Similar to py-2 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 9rem; /* space-x-[9rem] equivalent */
+  font-family: 'Yuji Boku', serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 1.25rem;
+
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #FFD700; /* Yellow for active link */
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+.logo img {
+  height: 100px; /* adjust as needed */
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; /* optional */
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  color: #DF6161;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p,
+.social-section p,
+.reservation-description {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #DF6161;
+  font-family: 'Krona One', sans-serif;
+}
+
+.reservation-form input {
+  background-color: white;      /* Input background */
+  color: black;                 /* Text color */
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.reservation-form label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+#reservation-message {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+#reservation-message.show {
+  opacity: 1;
+}
