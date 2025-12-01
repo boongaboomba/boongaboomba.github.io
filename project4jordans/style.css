@@ -1,0 +1,141 @@
+/* Remove default padding/margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background-color: #111;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: rgb(255, 96, 96);
+}
+
+/* CENTER CONTENT */
+.content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* SMALL SQUARE IMAGES */
+.image-grid {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 400px;      /* size of square */
+  height: 350px;     /* makes it a square */
+  object-fit: cover; /* crops to fit square */
+  border-radius: 8px;
+ padding: 10px;
+}
+.bounce-title {
+  display: inline-block;
+  animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.collection-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.collection-grid img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.collection-grid .item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.collection-grid .item:hover {
+  transform: scale(1.05);
+}
+
+.center-box {
+  text-align: center;       /* centers all text */
+  margin-top: 40px;
+}
+
+.center-box img {
+  width: 300px;             /* set image size */
+  height: auto;             /* keep proportions */
+  display: block;
+  margin: 20px auto;        /* centers image horizontally */
+  border-radius: 10px;
+}
+
+.center-box p {
+  font-size: 18px;
+  width: 80%;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: red;
+}
+
+.about-box {
+  text-align: center;
+  margin: 60px auto;
+  width: 80%;
+  max-width: 900px;
+}
+
+.about-box h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-box p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
