@@ -1,0 +1,124 @@
+/* Remove default padding/margins */
+{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #790000; /* DARK RED BACKGROUND */
+    }
+
+    .header {
+        background: white;
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    /* --- NAVIGATION BAR STYLES --- */
+    .navbar {
+        background: #D4D4D4; /* SOLID WHITE NAV */
+        padding: 5px 0;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+        padding: 8px 12px;
+        transition: 0.3s ease;
+        border-radius: 6px;
+    }
+
+    .navbar a:hover {
+        background: rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        transform: translateY(-3px);
+    }
+
+    /* MENU BOXES */
+    .menu-container {
+        max-width: 1000px;
+        margin: 80px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .menu-box {
+        width: 260px;
+        background: white; /* KEEP BOXES WHITE */
+        padding: 25px;
+        text-align: center;
+        border-radius: 14px;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    .menu-box:hover {
+        background: #ffffff;
+        transform: translateY(-7px);
+        box-shadow: 0 16px 35px rgba(0,0,0,0.3);
+    }
+	
+	.menu-box:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 15px rgba(0, 140, 255, 0.7),
+        0 0 35px rgba(0, 140, 255, 0.5),
+        0 0 50px rgba(0, 140, 255, 0.3);
+}
+
+/* center the slider on the page */
+.scroll-slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* each slide */
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* images */
+.slide img {
+  width: 350px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  justify-content: center;
+  align-items: center;
+}
+
+/* red glow on hover */
+.slide img:hover {
+  box-shadow: 0 0 20px red;
+  transform: scale(1.05);
+  cursor: circle;
+}
+
+/* hide horizontal scrollbar (optional) */
+.scroll-slider::-webkit-scrollbar {
+  height: 0;
+}

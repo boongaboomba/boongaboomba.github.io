@@ -1,0 +1,263 @@
+/* Basic Reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h1 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: 'Yuji Boku', serif;
+  font-size: 48px;
+  text-align: center;
+  color: yellow;
+}
+
+h3 {
+  font-family: 'Krona One', san-serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+/* ------------------------------
+   GENERAL PAGE STYLING
+------------------------------ */
+
+body {
+    font-family: "Krona One", serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Fix Google Font import, since your HTML link was broken */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Krona+One&display=swap');
+
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);   /* transparent black overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);       /* glass effect */
+    padding: 12px 0;
+}
+
+.navbar .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+/* ------------------------------
+   NAVIGATION LINKS
+------------------------------ */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Krona One", sans-serif;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #FFD369;  /* gold/yellow hover */
+}
+
+.nav-links li a.active {
+    color: #FFD369;
+    border-bottom: 2px solid #FFD369;
+    padding-bottom: 4px;
+}
+
+/* ------------------------------
+   BANNER IMAGE
+------------------------------ */
+
+header img {
+    margin-top: 80px; /* push hero image below navbar */
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* ------------------------------
+   FOOD GALLERY FIXES
+------------------------------ */
+
+.food-gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-gallery img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Text color fixes */
+.text-white-200 { color: #ececec; }
+.text-white-400 { color: #bbbbbb; }
+.text-white-500 { color: #aaaaaa; }
+
+/* Yellow text override for menu labels */
+.text-yellow { color: #FFD369; }
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    color: #cccccc;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Navbar styles */
+
+
+.navbar {
+  background-color: #DF6161;
+  padding: 10px 0; /* Similar to py-2 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 9rem; /* space-x-[9rem] equivalent */
+  font-family: 'Yuji Boku', serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-size: 1.25rem;
+
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a.active {
+  color: #FFD700; /* Yellow for active link */
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+.logo img {
+  height: 100px; /* adjust as needed */
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; /* optional */
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  color: #DF6161;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p,
+.social-section p,
+.reservation-description {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #DF6161;
+  font-family: 'Krona One', sans-serif;
+}
+
+.reservation-form input {
+  background-color: white;      /* Input background */
+  color: black;                 /* Text color */
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.reservation-form label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+}
+
+#reservation-message {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+#reservation-message.show {
+  opacity: 1;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZO Sushi Bar & Kitchen - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-center min-h-screen bg-[#DF6161] text-white font-ezo-title">
+
+  <!-- Navbar -->
+  <nav class="navbar"> 
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+   <!-- Contact Page Content -->
+  <section class="contact-container">
+    <h3 class="contact-title">Ezo Sushi Bar & Kitchen</h3>
+    <div class="contact-info">
+      <h3><p><strong>Address:</strong> 145 Sunrise Blvd, Long Island, NY 11746</p></h3>
+      <h3><p><strong>Phone:</strong> (631) 555-9032</p></h3>
+      <h3><p><strong>Email:</strong> contact@ezosushibar.com</p></h3>
+    </div>
+    <br>
+    <h2 class="section-heading">Social Media</h2>
+    <div class="social-section">
+      <h3><p><strong>TikTok:</strong> @EzoSushiBar</p></h3>
+      <h3><p><strong>Instagram:</strong> @EzoSushiBar</p></h3>
+      <h3><p><strong>Facebook:</strong> Ezo Sushi Bar & Kitchen</p></h3>
+      <h3><p><strong>Yelp:</strong> Ezo Sushi Bar & Kitchen</p></h3>
+    </div>
+    <br>
+    <h2 class="section-heading">Make a Reservation</h2>
+
+    <h3><p class="reservation-description">
+      At Ezo Sushi Bar & Kitchen, booking a table is simple and convenient. Guests 
+      can easily make a reservation online by selecting their preferred date, 
+      time, and number of guests using our built-in calendar system. After 
+      entering basic contact information, click <strong>Confirm Reservation</strong> to 
+      finalize your booking. A confirmation message will be sent instantly by 
+      email or text. For same-day reservations or parties larger than six, 
+      please call us directly at <strong>(631) 555-9032</strong>.
+    </p></h3>
+    <br>
+    <br>
+    <!-- Reservation Form -->
+    <form class="reservation-form flex flex-col items-center gap-4">
+  <label>DATE:</label>
+  <input type="date" class="bg-white text-black p-2 rounded w-64" required>
+
+  <label>TIME:</label>
+  <input type="time" class="bg-white text-black p-2 rounded w-64" required>
+
+  <label>NUMBER OF PEOPLE:</label>
+  <input type="number" min="1" class="bg-white text-black p-2 rounded w-64" required>
+
+  <label>HOST NAME:</label>
+  <input type="text" class="bg-white text-black p-2 rounded w-64" required>
+
+  <label>HOST PHONE NUMBER:</label>
+  <input type="tel" class="bg-white text-black p-2 rounded w-64" required>
+
+  <button type="submit" class="confirm-btn bg-black text-white p-3 rounded">
+    CONFIRM
+  </button>
+</form>
+
+<p id="reservation-message" class="text-green-300 text-lg mt-4"></p>
+
+  </section>
+
+</body>
+</html>
